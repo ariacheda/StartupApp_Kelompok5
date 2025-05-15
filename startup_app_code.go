@@ -158,7 +158,6 @@ func tampilkanSemuaStartup() {
 	fmt.Println("-----------------------------")
 }
 
-// 🔥 Fungsi baru: hapus startup
 func hapusStartup() {
 	if len(startups) == 0 {
 		fmt.Println("Belum ada startup untuk dihapus.")
@@ -187,7 +186,6 @@ func hapusStartup() {
 		return
 	}
 
-	// Hapus elemen di slice
 	startups = append(startups[:index], startups[index+1:]...)
 	fmt.Println("Startup berhasil dihapus.")
 }
